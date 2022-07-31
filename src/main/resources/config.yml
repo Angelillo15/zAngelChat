@@ -1,0 +1,22 @@
+Config:
+  ChatJoinMessage:
+    Groups:
+      admin: '&a[+] &bWelcome %player%, everyone say Hello to the admin!'
+      default: '&a[+] &fWelcome %player%'
+  ChatLeaveMessage:
+    Groups:
+      admin: '&4[-] &4&lAdmin &f%player%'
+      default: '&4[-] &f%player%'
+  ChatFormat:
+    Groups:
+      admin: '&4&lAdmin &f{player} &8&l» &f{msg}'
+      default: '{player} &8&l» &f{msg}'
+  ScreenShowTitleOnJoin:
+    enable: true
+    Groups:
+      admin:
+        title: '&6&lWelcome &4&lAdmin'
+        subtitle: '&b&lzMoon &f&Network'
+      default:
+        title: '&6&lWelcome'
+        subtitle: '&b&lzMoon &f&Network'

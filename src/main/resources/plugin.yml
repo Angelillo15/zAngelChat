@@ -1,0 +1,9 @@
+name: zAngelChat
+version: '${version}'
+main: es.angelillo15.zangelchat.ZAngelChat
+api-version: 1.16
+authors: [ Angelillo15 ]
+website: angelillo15.es
+commands:
+  zac:
+    description: "Main Command of the plugin"
