@@ -7,6 +7,7 @@ public final class ZAngelChat extends ZAngelChatManager {
     @Override
     public void onEnable() {
         // Plugin startup logic
+        drawLogo();
         registerConfig();
         registerListeners();
         setupPermissions();

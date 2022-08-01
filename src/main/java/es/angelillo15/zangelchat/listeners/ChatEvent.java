@@ -13,7 +13,7 @@ public class ChatEvent implements Listener {
     public void playerChatEvent(AsyncPlayerChatEvent e){
         Player player = e.getPlayer();
         String message = MessageUtils.getFinalMessage(player, e.getMessage());
-        for (Player people : Bukkit.getOnlinePlayers()){
+        for (Player people : e.getRecipients()){
             people.sendMessage(message);
         }
         Bukkit.getConsoleSender().sendMessage(message);
