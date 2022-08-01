@@ -45,7 +45,7 @@ public class MainCommand implements CommandExecutor {
     }
 
     public void help(Player p) {
-        p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&6----------------WorldsLife----------------"));
+        p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&6----------------zAngelChat----------------"));
         p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&bAvailable Commands:"));
         for(SubCommand csb : getSubCommands()){
             p.sendMessage(ColorUtils.translateColorCodes("&b" + csb.getSyntax() + " &8&l» &f " + csb.getDescription()));
