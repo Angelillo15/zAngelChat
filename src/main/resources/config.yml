@@ -9,6 +9,15 @@ Config:
       admin: '&4[-] %vault_prefix% &f%player_name%'
       default: '&4[-] &f%player_name%'
   ChatFormat:
+    noGroup: "{player} &8&l» &f{msg}"
     Groups:
       admin: '&4&lAdmin &f{player} &8&l» &f{msg}'
       default: '{player} &8&l» &f{msg}'
+  msgFormat: '&3&lMsg &8[&r{sender} &8> &r{target}&8] &8&l» {msg}'
+  SSPY: '&3&lSSPY &8[&r{sender} &8> &r{target}&8] &8&l» {msg}'
+  blockedCommands:
+    - '/minecraft:tell'
+    - '/minecraft:msg'
+    - '/minecraft:tellraw'
+    - '/minecraft:whisper'
+    - '/tellraw'

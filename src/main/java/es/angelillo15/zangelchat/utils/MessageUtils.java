@@ -29,8 +29,13 @@ public class MessageUtils {
     }
 
     public static String getFinalMessage(Player player, String message) {
+        String format;
         FileConfiguration c = LoadConfig.getMainConfig().getConfig();
-        String format = c.getString("Config.ChatFormat.Groups." + ZAngelChat.perms.getPrimaryGroup(player));
+        if(c.contains("Config.ChatFormat.Groups." + ZAngelChat.perms.getPrimaryGroup(player))){
+            format = c.getString("Config.ChatFormat.Groups." + ZAngelChat.perms.getPrimaryGroup(player));
+        }else {
+            format = c.getString("Config.ChatFormat.noGroup");
+        }
         assert format != null;
         String formatParsed = parsePlaceHolders(format, player);
         return ColorUtils.translateColorCodes(parseBlockWords(
