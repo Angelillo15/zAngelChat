@@ -5,6 +5,7 @@ import es.angelillo15.zangelchat.config.LoadConfig;
 import es.angelillo15.zangelchat.listeners.ChatEvent;
 import es.angelillo15.zangelchat.listeners.PlayerJoin;
 import es.angelillo15.zangelchat.listeners.PlayerQuit;
+import es.angelillo15.zangelchat.listeners.PreMsgCommandEvent;
 import es.angelillo15.zangelchat.utils.ColorUtils;
 import jdk.nashorn.internal.runtime.regexp.joni.Config;
 import org.bukkit.Bukkit;
@@ -28,6 +29,7 @@ public class ZAngelChatManager extends JavaPlugin {
             pm.registerEvents(new PlayerJoin(), this);
             pm.registerEvents(new PlayerQuit(), this);
         }
+        pm.registerEvents(new PreMsgCommandEvent(), this);
     }
     void registerConfig(){
         lc = new LoadConfig(this);

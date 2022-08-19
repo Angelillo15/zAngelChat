@@ -7,3 +7,6 @@ website: angelillo15.es
 commands:
   zac:
     description: "Main Command of the plugin"
+  msg:
+    description: "Command to send msg"
+    aliases: [tell, whisper, msg]

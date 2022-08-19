@@ -1,1 +1,3 @@
 Reload: '&aThe plugin has been successfully reloaded'
+CommandBlocked: '&4&lERROR! That command is blocked'
+PlayerOffline: '&4&lERROR! That player is offline'
